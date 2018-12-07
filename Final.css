@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+div {
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px
+}
+#b{
+    text-align: center;
+    background-color: lightgray;
+}
+#c{
+    text-align: center;
+}
+body{
+    background-color: whitesmoke
+}

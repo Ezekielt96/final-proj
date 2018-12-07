@@ -2,19 +2,57 @@
 <html lang="en">
 <!--
     Author:  Ezekiel Towner 
-    Class:   Web & Distributed Programming 
-    Project: Final Project 
-    Session: su18-cpsc-24700-lt1
-    Description: This application focuses on forms and validations of forms 
+    Description: Workout Log Application  
 -->
     <head>
         <meta charset="UTF-8">
         <title>Final Project </title>
-        <link rel="stylesheet" href="mustang3.css">
-        <script src="mustang3.js"></script>
-      
+        <link rel="stylesheet" href="Final.css">
+        <script src="final.js"></script>
     </head>
     <body onload="initApplication()">
-        <h1>Final Project</h1>
+        <div id = "a">
+        <h1>Exercise Log</h1>
+        <h3>Description:</h3>
+        <p><b>Why keep an online workout log? </b>This simple workout log is designed to replace and organize a traditional workout journal all in one place. If an individual is going to spend valuable time at a gym and they have desired fitness goals, keeping a log for your workout is important to track progress week by week and month to month basis in order to keep yourself motivated and accountable. Think of this website as your own online personal trainer. Workouts will become more effective because you will know exactly what you're doing each day at each session such as how much weight you lifted and duration of each workout. </p>
+        <hr>
+        
+        <div id = "b">
+        <form name ="input" action = "final.php">
+            <h4>Exercise Type</h4>
+            <select name = "Excercise Type">
+                <option value = "Blank">          </option>
+                <option value = "Weightlifting"> Weightlifitng </option>
+                <option value = "Running"> Running </option>
+            </select>
+                <h4>Date</h4>
+                <input type = "text" label for = "month" name = "Month" size ="5" maxlength = "30" placeholder = "Month"/>
+                <input type = "text" name = "Day" size ="5" maxlength = "30" placeholder = "Day" />
+                <input type = "text" name = "Year" size ="5" maxlength = "30" placeholder = "year" />
+                    <h4>Time</h4>
+                    <input type = "text" name = "Month" size ="5" maxlength = "30" placeholder = "Hours"/>
+                    <input type = "text" name = "Day" size ="5" maxlength = "30" placeholder = "Minutes" />
+                    <input type = "text" name = "Year" size ="5" maxlength = "30" placeholder = "Seconds" />
+                    <select name = "Excercise Type">
+                            <option value = "Blank">          </option>
+                            <option value = "AM"> AM </option>
+                            <option value = "PM"> PM</option>
+                        </select>
+                    <h4>Calories Burned</h4>
+                    <input type = "text" name = "calories" size ="15" maxlength = "30" />
+                 <h4>Maximum Pulse Rate</h4>
+                <input type = "text" name = "calories" size ="15" maxlength = "30" />
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    <div id = "c">
+    <form action = "final.php">
+        <h4>Comment on your Workout</h4>
+        <textarea name ="comments" cols = "100" rows = "10">Add any Comments you Want here...</textarea>
+    </form>
+    
+</div>
+
+
         </body>
 </html>
